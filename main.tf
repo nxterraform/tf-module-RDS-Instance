@@ -9,7 +9,7 @@ locals {
 
   #create RDS Instances
   module "rds" {
-  source                 =  "./moddules/postgres/"
+  source                 =  "./modules/postgres/"
 
   identifier             = local.db_instance_identifier
   instance_class         = var.instance_class
